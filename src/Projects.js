@@ -11,7 +11,7 @@ function Projects () {
   var link = <a style={style} href="https://github.com/JeyoungJung?tab=repositories" target="_blank"> github</a>
   return(
     <div className="projects-section" id="Projects">
-      <div className="text-part">
+      <div className="picture-part">
         <h1>Projects</h1>
         <hr/>
         <img src="/gifs/tower-defense-game.gif" alt=""/>
