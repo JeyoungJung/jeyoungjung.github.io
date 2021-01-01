@@ -17,15 +17,14 @@ html {
 
 .navbar{
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 10vh;
+  height: 10vh;
   background:#ffffff;
   width: 100%;
-  height: 70px;
   z-index: 1;
 }
 
@@ -70,58 +69,32 @@ a:hover{
   height: 100vh;
   background: rgb(26, 26, 26);
   color: white;
+  overflow: hidden;
 }
 
 .text-part {
-  padding:30px 400px 30px 400px;
-}
-
-.contact-form {
-  width: 100%;
-  padding:30px;
-  background:#fff;
-}
-
-.contact-form h2{
-  font-size:30px;
-  color:rgb(0, 0, 0);
-}
-
-.contact-form span{
-  font-size:15px;
-  color:rgb(0, 0, 0);
-}
-
-.contact-form .inputbox {
-  position:relative;
-  width:100%;
-  margin-top:10px;
-}
-
-.contact-form .inputbox input, 
-.contact-form .inputbox textarea {
-  width: 100%;
-  padding:5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom:2px solid #333;
-  outline: none;
-  resize: none;
+  padding:3.1vh 20vw 3.1vh 20vw;
 }
 
 h1{
-  padding: 30px;
-  font-size:50px;
+  padding: 3.1vh 0vw;
+  font-size: 3vw;
 }
 
 p{
-  padding: 30px;
-  font-size: 24px;
-  line-height: 2;
+  padding: 3.1vh 0vw;
+  font-size: 1.1vw;
+  line-height: 5vh;
 }
 
 img {
-  height:300px;
-  padding: 30px;
+  height: 35vh;
+  width: 35vh;
+  padding: 3.1vh 3.1vh;
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar{
+    display: flex;
+  }
 }
