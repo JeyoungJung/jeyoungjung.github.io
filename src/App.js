@@ -1,9 +1,11 @@
 import React from 'react';
-import About from './About';
 import Nav from './Nav';
 import Home from './Home';
-import Contact from './Contact';
+import About from './About';
 import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
+
 import './App.css';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <Home/>
       <About/>
       <Projects/>
+      <Skills/>
       <Contact/>
     </div>
   );

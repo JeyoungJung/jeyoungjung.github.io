@@ -7,6 +7,7 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  font-family: 'Cormorant', serif;
 }
 
 .App {
@@ -61,7 +62,8 @@ a:hover {
 .home-section,
 .about-section,
 .projects-section,
-.contact-section {
+.contact-section,
+.skills-section {
   position: static;
   display: flex;
   justify-content: center;
@@ -75,13 +77,19 @@ a:hover {
   overflow: hidden;
 }
 
+.projects-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .projects-section {
-  height: 110vh;
+  height: 160vh;
 }
 
 .text-part {
   width: 100%;
-  padding: 3.1vh 20vw 3.1vh 20vw;
+  padding: 9vh 20vw 3.1vh 20vw;
 }
 
 .picture-part {
@@ -99,14 +107,23 @@ h1 {
 }
 
 p {
-  padding: 3.1vh 0vw;
+  padding: 3.1vh 0 0 0;
   font-size: 3vw;
   line-height: 5vh;
 }
 
 img {
   height: 40vw;
-  padding: 3.1vh;
+  padding: 0;
+}
+
+hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 @media only screen and (min-width: 700px) {
@@ -115,9 +132,13 @@ img {
     display: list-item;
     padding: 3.1vh 20vw 3.1vh 20vw;
   }
+  .projects-content{
+    display: flex;
+    justify-content: space-between;
+  }
   img {
     height: 40vh;
-    padding: 3.1vh 3.1vh 0 0;
+    padding: 0 3.1vh 0 0;
   }
 }
 
@@ -127,6 +148,7 @@ img {
   }
   p {
     font-size: 1.5vw;
+    padding: 1vh 0 1vh 0;
   }
   h1 {
     font-size: 3vw;
@@ -136,8 +158,15 @@ img {
     display: list-item;
     padding: 3.1vh 20vw 3.1vh 20vw;
   }
+  .projects-content{
+    display: flex;
+    justify-content: space-between;
+    
+  }
   img {
     height: 40vh;
-    padding: 3.1vh 3.1vh 0 0;
+    padding: 0 1vh 1vh 0;
   }
 }
+
+
