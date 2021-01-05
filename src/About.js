@@ -15,7 +15,7 @@ function About () {
           and goal-oriented. Finally, some of my hobbies include playing/coding video games, 
           watching movies and composing music. 
         </p>
-        <img src="profile.png" alt=""/>
+        <a href="https://github.com/JeyoungJung?tab=repositories"><img src="profile.png" alt=""/></a>
       </div>
     </div>
   )

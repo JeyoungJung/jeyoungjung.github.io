@@ -8,20 +8,15 @@ function Projects () {
     margin: '0px'
   }
 
-  const pstyle = {
-    fontSize: '1vw',
-    padding: '0'
-  }
-
-  var github = <a style={style} href="https://github.com/JeyoungJung?tab=repositories" target="_blank"> github </a>
-  var multiplayerGame = <a style={style} href="https://github.com/JeyoungJung/multiplayer-game" target="_blank"> 
+  var github = <a style={style} href="https://github.com/JeyoungJung?tab=repositories" target="_blank" rel="noreferrer"> github </a>
+  var multiplayerGame = <a style={style} href="https://github.com/JeyoungJung/multiplayer-game" target="_blank" rel="noreferrer"> 
                          Realtime multiplayer game with socket.io, express.io and Node.js
                         </a>
-  var towerDefense = <a style={style} href="https://github.com/JeyoungJung/tower-defense" target="_blank"> 
+  var towerDefense = <a style={style} href="https://github.com/JeyoungJung/tower-defense" target="_blank" rel="noreferrer"> 
                         Tower defense
                         </a>
 
-  var physicsSimulations = <a style={style} href="https://github.com/JeyoungJung/physics-simulations" target="_blank"> 
+  var physicsSimulations = <a style={style} href="https://github.com/JeyoungJung/physics-simulations" target="_blank" rel="noreferrer"> 
                            Physics Simulations
                            </a>
 
@@ -30,28 +25,27 @@ function Projects () {
       <div className="picture-part">
         <h1>Projects</h1>
         <hr/>
-          <p>{multiplayerGame}</p>
-          <hr/>
-          <p>{towerDefense}</p>
-          <div className="projects-content">
-            <img src="/gifs/tower-defense-game.gif" alt=""/>
-            <p style={pstyle}>Simple Tower Defense game created with Processing and Javscript. 
-              The map and the turrets were drawn with vector graphics.
-            </p>
-          </div>
-          <hr/>
+        <h5>{multiplayerGame}</h5>
+        <hr/>
+        <h5>{towerDefense}</h5>
+        <div className="projects-content">
+          <img src="/gifs/tower-defense-game.gif" alt=""/>
+        <p>Simple Tower Defense game created with Processing and Javscript.</p>
+        </div>
         
-          <p>{physicsSimulations}</p>
-          <div className="projects-content">
-            <img src="/gifs/physics-simulations.gif" alt="wow"/>
-            <p style={pstyle}>Demonstrates some basic physics with accuracy using physics equations.
-            More examples can be found on my github.
-            </p>
-          </div>
-          
-          <hr/>
-          <p>
-          Visit my{ github }for more information and more projects.
+        <hr/>
+      
+        <h5>{physicsSimulations}</h5>
+        <div className="projects-content">
+          <img src="/gifs/physics-simulations.gif" alt="wow"/>
+          <p>Demonstrates some basic physics with accuracy using physics equations.
+          More examples can be found on my github.
+          </p>
+        </div>
+        
+        <hr/>
+        <p>
+        Visit my{ github }for more information and more projects.
         </p>
       </div>
     </div>

@@ -77,14 +77,35 @@ a:hover {
   overflow: hidden;
 }
 
+.home-section h1{
+  font-size: 4vw;
+}
+
+.home-section-images{
+  display: flex;
+  bottom: 0%;
+  position: absolute;
+}
+
+.home-section-images img{
+  width:10vw;
+  height: auto;
+}
+
 .projects-content{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
 .projects-section {
   height: 160vh;
+}
+
+.projects-section p{
+  font-size:2vw;
 }
 
 .text-part {
@@ -126,6 +147,8 @@ hr {
   text-align: center;
 }
 
+
+
 @media only screen and (min-width: 700px) {
   .picture-part {
     width: 100%;
@@ -140,11 +163,26 @@ hr {
     height: 40vh;
     padding: 0 3.1vh 0 0;
   }
+  .projects-section h5 {
+    font-size: 2vw;
+    padding: 1vh 0 1vh 0;
+  }
+  .projects-section p{
+    font-size:1.6vw;
+  }
+  .home-section-images img{
+    width:10vw;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .navbar {
     display: flex;
+  }
+  .home-section-images img{
+    width:4.5vw;
+    height: auto;
   }
   p {
     font-size: 1.5vw;
@@ -161,9 +199,16 @@ hr {
   .projects-content{
     display: flex;
     justify-content: space-between;
-    
   }
-  img {
+  .projects-section h5 {
+    font-size: 1.5vw;
+    padding: 1vh 0 1vh 0;
+  }
+  .projects-section p {
+    font-size: 1vw;
+    padding: 1vh 0 1vh 0;
+  }
+  .projects-section img {
     height: 40vh;
     padding: 0 1vh 1vh 0;
   }
