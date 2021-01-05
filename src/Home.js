@@ -9,7 +9,7 @@ function Home () {
         <a href="https://github.com/JeyoungJung?tab=repositories" target="_blank" rel="noreferrer">
           <img src="github.png" alt=""/>
         </a> 
-        <a href="www.linkedin.com/in/jeyoung-jung" target="_blank" rel="noreferrer">
+        <a href="https://linkedin.com/in/jeyoung-jung" target="_blank" rel="noreferrer">
           <img src="linkedin.png" alt=""/>
         </a> 
       </div>
