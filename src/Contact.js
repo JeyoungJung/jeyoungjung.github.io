@@ -4,7 +4,7 @@ import './App.css';
 function Contact () {
   const style = {
     color: 'white',
-    textTransform: 'none',
+    textTransform: 'UpperCase',
     textDecoration: 'underline',
     margin: '0px'
   }
